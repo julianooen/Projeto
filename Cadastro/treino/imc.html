@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function calculo(peso,altura,result){
+            let imc=peso/(altura*altura);
+            let resposta ='';
+            if (imc<17){
+                resposta = 'Muito abaixo do peso.'
+            }else if (imc<18.5){
+                resposta = 'Abaixo do peso.'
+            }else if (imc<25){
+                resposta = 'Peso normal.'
+            }else if (imc<30){
+                resposta = 'Acima do peso.'
+            }else if (imc<35){
+                resposta = 'Obesidade I.'
+            }else if (imc<40){
+                resposta = 'Obesidade II (severa).'
+            }else {
+                resposta = 'Obesidade III (mórbida).'
+            }
+            
+            switch(result){
+                case '1':
+                    window.document.getElementById('resultado').innerHTML = 'Resposta: Seu IMC é: '+imc;
+                    
+                    break;
+                case '2':
+                    window.document.getElementById('resultado').innerHTML = 'Resposta: Seu grau de IMC é: '+resposta;
+                    
+                    break;
+                default:
+                    window.document.getElementById('resultado').innerHTML = 'Resposta: Seu IMC é: '+imc+'<br>Resposta: Seu grau de IMC é: '+resposta;
+                    
+                    break;
+            }
+            
+        }
+    </script>
+</head>
+<body>
+    <br>
+    <h1>Cálculo do IMC</h1>
+    <br>
+    Peso
+    <br>
+    <input type="text" name="peso" id="peso"><br>
+    <br>
+    Altura
+    <br>
+    <input type="text" name="altura" id="altura"><br>
+    <br>
+    Operação
+    <br>
+    <select name="result" id="result">
+        <option value="1">Exibir valor</option>;
+        <option value="2">Exibir o resultado</option>;
+        <option value="3">Exibir o valor e o resultado</option>;
+    </select><br>
+    <br>
+    <input type="button" value="Executar" onclick="calculo(window.document.getElementById('peso').value ,window.document.getElementById('altura').value ,window.document.getElementById('result').value)">
+    <hr>
+    <p id='resultado'>Resposta:</p>
+    <p id='resultado2'></p>
+</html>

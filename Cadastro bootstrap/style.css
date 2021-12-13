@@ -1,0 +1,44 @@
+#formCad{
+    margin: auto;
+    margin-top: 40px;
+    padding: 20px;
+    max-width: 600px;
+    border: 1px solid gray;
+}
+
+.input-group-text{
+    width: 100px;
+    
+}
+.input-group{
+    margin-bottom: 15px;
+}
+fieldset
+{
+    margin: auto;
+    width:560px;
+    height:300px;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 28px;
+    background: cornflowerblue;
+    color: white;
+    font-family: Cambria, Arial;
+}
+legend{
+    font-family: Cambria, Arial;
+}
+.btn{
+    width: 141px;
+}
+.table{
+    margin:auto;
+    max-width: 1200px;
+    
+}
+td{
+    max-width: 120px;
+}

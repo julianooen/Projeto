@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function ler(){
+            let nome = window.document.getElementById('nome').value;
+            let selecao = window.document.getElementById('selecao').value;
+            alert(nome+' '+selecao);
+        }
+
+    </script>
+</head>
+<body>
+    <form>
+        <input type="text" name="nome" id="nome">
+        <br>
+        <select name="selecao" id="selecao">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select>
+        <input type="button" value="Enviar" onclick="ler()">
+    </form>
+</body>
+</html>

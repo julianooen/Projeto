@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <script src="java.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header><h1 id='titulo'>Alunos cadastrados</h1></header>
+    <input id='menu' class='botao' type="button" onclick=mostrarCadastro() value="Cadastar novo aluno">
+    
+    <div id='cad'>
+        
+        <form>
+            <table id='cadTabela' border="0">
+                <tr>
+                    <td class="nomesCadastro">Nome completo:</td>
+                    <td><input type="text" class='inputtxt' name="nome" id="nome" placeholder="Nome do aluno"></td>
+                </tr>
+                <tr>
+                    <td class="nomesCadastro">Telefone:</td>
+                    <td><input type="number" class='inputtxt' name="fone" id="fone" ></td>
+                </tr>
+                <tr>
+                    <td class="nomesCadastro">Data de nascimento:</td>
+                    <td><input class='inputtxt' type="date" name="dNas" id="dNas" ></td>
+                </tr>
+                <tr>
+                    <td class="nomesCadastro">Nota final:</td>
+                    <td><input type="number" class='inputtxt' name="nota" id="nota" ></td>
+                </tr>
+                <tr>
+                    <td colspan="2" style='text-align: center;'><input type="button" class='botao' value="Inserir" onclick=inserir()>
+                        <input id='bCancelar' class='botao' type="button" onclick=mostrarTabela() value="Cancelar">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <div id='lista'>
+        <form>
+            <table id='tabCad' border='0'>
+                <tr>
+                    <th class="listaHead">Nome completo</th>
+                    <th class="listaHead">Telefone</th>
+                    <th class="listaHead">Data de nascimento</th>
+                    <th class="listaHead">Nota final</th>
+                    <th class="listaHead">Ação</th>
+               
+                </tr>
+            </table>
+        </form>
+    </div>
+    
+</body>
+</html>

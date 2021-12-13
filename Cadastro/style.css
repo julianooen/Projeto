@@ -1,0 +1,75 @@
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 28px;
+    background: cornflowerblue;
+    color: white;
+    font-family: Cambria, Arial;
+}
+.nomesCadastro{
+    background:white;
+}
+#cad{
+    
+    margin-left: 200px;
+    
+    display: none;
+}
+h1{
+    margin-left: 20px;
+    text-align: center;
+}
+.listaHead{
+    width: 300px;
+    text-align: center;
+}
+body{
+    margin-left: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background:white;    
+}
+#tabCad{
+    background: rgba(0, 238, 255, 0.712);
+    text-align: center;
+    
+    font-size: 15pt;
+}
+.menu{
+    margin-bottom: 15px;
+}
+#bCancelar{
+    display: none;
+}
+
+.botao{
+	font-weight: bold;
+	padding: 10px;
+	/*float: left;
+    margin-left: 20px;*/
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-bottom-style: solid;
+	border-top-color: #00a4b9;
+	border-right-color: #00a4b9;
+	border-bottom-color: #00a4b9;
+	border-left-color: #00a4b9;
+    background: #00a4b9;
+	color:white;
+    border-radius: 20px;
+	
+
+}
+#cadTabela{
+    margin-left: 35%;
+    font-size: 10pt;
+    
+}
+.inputtxt{
+    width: 200px;
+    height: 25px;
+    vertical-align: middle;
+    font-size: 15pt;
+}
