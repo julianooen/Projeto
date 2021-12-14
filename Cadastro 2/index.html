@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <script src="java.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Cadastro de alunos</h1>
+    </header>
+    <main>
+        <div clas='title'>
+            <h2>Formulário</h2>
+        </div>
+        <div class="card">
+            <div class='dados'>
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome">
+            </div>
+            <div class='dados'>
+                <label for="fone">Telefone:</label>
+                <input type="number" name="fone" id="fone">
+            </div>
+            <div class='dados'>
+                <label for="dataNas">Data de nascimento:</label>
+                <input type="date" name="dataNas" id="dataNas">
+            </div>
+            <div class='dados'>
+                <label for="dataCad">Data do cadastro:</label>
+                <input style="background-color: gray;" type="date" name="dataCad" id="dataCad" readonly>
+            </div>
+            <div class='dados' >
+                <label for="dataAlt">Data da última alteração:</label>
+                <input style="background-color: gray;" type="date" name="dataAlt" id="dataAlt" readonly>
+            </div>
+            <div class='dados'>
+                <label for="notaFim">Nota final:</label>
+                <input type="number" name="notaFim" id="notaFim">
+            </div>
+            <button id ='botao'onclick="aluno.salvar()">Salvar</button>
+            <button onclick="aluno.cancelar()">Cancelar</button>
+        </div> 
+        <div class="tab">
+          <table border='1'>
+              <thead>
+                  <th class='center'>ID</th>
+                  <th>Nome</th>
+                  <th>Telefone</th>
+                  <th>Data de nascimento</th>
+                  <th>Data do cadastro</th>
+                  <th>Data da última alteração</th>
+                  <th>Nota final</th>
+                  <th class='center'>Ações</th>
+              </thead>
+              <tbody id="tbody">
+
+              </tbody>
+          </table>  
+        </div>
+    </main>
+
+    
+</body>
+</html>
