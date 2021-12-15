@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <title>Cronômetro</title>
+    <script src="java.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Conômetro</h1>
+    <p id='inicial' name='inicial'></p>
+    <p id='final' name='final'></p>
+    <p id='resultado' name='resultado'></p>
+    <p id='pausado' name='pausado'></p>
+    <button id='botao' onclick="verificar(inicial,final,resultado)">Iniciar</button>
+    <button onclick="zerar(resultado)">Zerar</button>
+
+</body>
+</html>
