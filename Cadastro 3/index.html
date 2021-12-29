@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    
+</head>
+<body>
+    <header>
+        <h1>Cadastro de Alunos</h1>
+    </header>
+    <main>
+        <div id='painelCad'>
+            <div class='textForm'>
+                <span >Nome:</span>
+                <input type="text"  name="nome" id="nome">
+            </div>
+            <div class='textForm'>
+                <span >Telefone:</span>
+                <input type="text" name="fone" id="fone">
+            </div>
+            <div class='textForm'>
+                <span >Data de nascimento:</span>
+                <input type="date" name="data" id="data">
+            </div>
+            <div class='textForm'>
+                <span >Nota:</span>
+                <input type="number" name="nota" id="nota">
+            </div >
+            <div class='textFormB'>
+                <input class='botao' type="button" value="Adicionar" onclick=aluno.adicionar(nome,fone,data,nota) id='botaoAdd'>
+                <input class='botao' type="button" value="Atualizar" onclick=aluno.atualizar(nome,fone,data,nota)>
+                <input class='botao' type="button" value="Excluir" onclick=aluno.excluir()>
+                <input class='botao' type="button" value="Cancelar" onclick=aluno.cancelar()>
+                
+            </div>
+        </div>
+        <div class='dados'>
+            <div class='dadosCab'>Nome</div>
+            <div class='dadosCab'>Telefone</div>
+            <div class='dadosCab'>Data de Nascimento</div>
+            <div class='dadosCab'>Nota</div>
+            <div class='dadosCab'>Status</div>
+
+        </div>
+
+
+    </main>
+
+
+
+
+    <script src="java.js"></script>
+    
+</body>
+</html>

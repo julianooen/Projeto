@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    text-align: center;
+    background-color: blueviolet;
+    color: white;
+    height: 80px;
+    font-size: 25pt;
+    
+}
+
+main{
+    margin: 20px;
+    text-align: center;
+    align-items: center;
+}
+
+#painelCad{
+    background-color:#fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-top: 15px;
+    border-radius: 5px;
+    width: 600px;
+    text-align: left;
+    margin: auto;
+}
+
+input{
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    outline: 0;
+}
+
+.textForm{
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+ body{
+    background-color: #fafbfc;
+ }
+
+ span{
+    width: 200px;
+ }
+
+ .textFormB{
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+}
+
+.botao{
+    width: 150px;
+}
+
+.dados{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.dadosCab{
+    background-color: #ccc;
+    border-bottom: 1px solid black;
+}
