@@ -15,27 +15,27 @@
         <fieldset>
             <legend>Formulário de cadastro do aluno.</legend>
             <div class="input-group flex-nowrap">
-                <span class="input-group-text" id="addon-wrapping">Nome:</span>
+                <span class="input-group-text">Nome:</span>
                 <input type="text" class="form-control" placeholder="Nome" name="nome" id="nome" aria-label="Username" aria-describedby="addon-wrapping">
                 
             </div>
             <div class="input-group flex-nowrap">
-                <span class="input-group-text" id="addon-wrapping">Fone:</span>
+                <span class="input-group-text" >Fone:</span>
                 <input type="number" class="form-control" placeholder="Telefone" name="fone" id="fone" aria-label="Username" aria-describedby="addon-wrapping">
                 
             </div>
             <div class="input-group flex-nowrap">
-                <span class="input-group-text" id="addon-wrapping">Data:</span>
+                <span class="input-group-text" >Data:</span>
                 <input type="date" class="form-control" aria-label="Username" name="nDas" id="nDas" aria-describedby="addon-wrapping">
                 
             </div>
             <div class="input-group flex-nowrap">
-                <span class="input-group-text" id="addon-wrapping">Nota:</span>
+                <span class="input-group-text" >Nota:</span>
                 <input type="number" class="form-control" placeholder="Nota" name="nota" id="nota" aria-label="Username" aria-describedby="addon-wrapping">
                 
             </div>
             <div class="btn-group" role="group" aria-label="Basic example">
-                <button type="button" class="btn btn-primary" onclick='cadastrarNovo(nome.value, fone.value, nDas.value, nota.value)'>Cadastrar Novo</button>
+                <button type="button" class="btn btn-primary" onclick='cadastrarNovo(nome.value, fone.value, nDas.value, nota.value)' id="incluirBtn" >Cadastrar Novo</button>
                 <button type="button" class="btn btn-primary" onclick='atualizar(nome.value, fone.value, nDas.value, nota.value)'>Atualizar</button>
                 <button type="button" class="btn btn-primary" onclick='deletar(nome.value, fone.value, nDas.value, nota.value)'>Excluir registro</button>
                 <button type="button" class="btn btn-primary" onclick='limpaCampos(nome.value, fone.value, nDas.value, nota.value)'>Limpar Campos</button>
