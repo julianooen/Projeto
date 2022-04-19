@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="java.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Caixa diário</h1>
+    </header>
+    <main>
+        <div id='container'>
+            <div id='entrada'>
+                <h2>Entradas</h2>
+                <div>
+                    <label for="">Histórico</label>
+                    <input type="text" name="historicoEntr" id="historicoEntr">
+                </div>
+                <div>
+                    <label for="">Data</label>
+                    <input type="date" name="dataEntr" id="dataEntr">
+                </div>
+                <div>
+                    <label for="">Valor</label>
+                    <input type="number" name="valorEntr" id="valorEntr">
+                </div>
+                <div>
+                    <button id="botaoe" onclick="entrada.cadastrar(historicoEntr,dataEntr,valorEntr,tebody,botaoe)">Cadastrar entrada</button>
+                </div>
+            </div>
+            <div id='saida'>
+                <h2>Saídas</h2>
+                <div>
+                    <label for="">Histórico</label>
+                    <input type="text" name="historicoDesp" id="historicoDesp">
+                </div>
+                <div>
+                    <label for="">Data</label>
+                    <input type="date" name="dataDesp" id="dataDesp">
+                </div>
+                <div>
+                    <label for="">Valor</label>
+                    <input type="number" name="valorDesp" id="valorDesp">
+                </div>
+                <div>
+                    <button id="botaos" onclick="saida.cadastrar(historicoDesp,dataDesp,valorDesp,tsbody,botaos)">Cadastrar saída</button>
+                </div>
+            </div>
+            <div id='tentrada'>
+                <h2>Entradas</h2>
+                <table border='1'>
+                <thead>
+                    <th>ID</th>
+                    <th>Data</th>
+                    <th>Histórico</th>
+                    <th>Valor</th>
+                    
+                </thead> 
+                <tbody name="tebody" id="tebody">
+
+                </tbody>
+                </table>
+            </div>
+            <div id='tsaida'>
+                <h2>Saídas</h2>
+                <table border="1">
+                <thead>
+                    <th>ID</th>
+                    <th>Data</th>
+                    <th>Histórico</th>
+                    <th>Valor</th>
+                    
+                </thead> 
+                    <tbody name="tsbody" id="tsbody">
+
+                    </tbody>
+                </table>
+            </div>
+            <div id="resultado">
+                <h2>Resultado</h2>
+                <span> Total entradas: </span><span id="totalEntradas">0</span><br>
+                <span>Total saídas: </span><span id="totalSaidas">0</span>
+                <h3>Resultado final:</h3><span><strong id="totalFinal">0</strong></span>
+            </div>
+        </div>
+ 
+
+    </main>
+    
+</body>
+</html>
